@@ -347,23 +347,29 @@
   }
   
   .social-icons a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
     background: var(--primary);
     color: var(--white);
     border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    margin-right: 10px;
+    margin: 0 8px;
     font-size: 1.2rem;
     transition: background 0.3s, transform 0.3s;
+    opacity: 0.8;
   }
   
   .social-icons a:hover {
     background: var(--secondary);
     transform: translateY(-3px);
+    opacity: 1;
   }
+  
+  
+
+  
   
   /* Form Styles */
   .contact-form input,
@@ -485,3 +491,19 @@
       transform: rotate(-45deg) translate(7px, -6px);
     }
   }
+
+
+  /*Footer Styling*/
+  footer {
+    background: linear-gradient(
+      180deg,
+      #1e1e1e 0%,
+      #151515 100%
+    );
+    color: #eaeaea;
+    padding: 36px 10px;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  
