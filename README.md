@@ -10,7 +10,7 @@ Perfect for freelancers, engineers, architects, or construction professionals.
 
 ## 🌐 Live Demo
 
-👉 [View Live Site](https://your-github-username.github.io/civil-engineer-portfolio/)
+👉 [View Live Site](https://your-github-Caroline-Gatwiri.github.io/civil-engineer-portfolio/)
 
 *(Link will work after you enable GitHub Pages — see below)*
 
