@@ -13,24 +13,34 @@
 
 <section class="gallery-section">
   <div class="container">
+    <div class="back-nav">
+        <a href="index.html" class="btn-outline-dark">← Back to Home</a>
+      </div>
+      
+      
     <h2 class="section-title">Pitch Roof Houses</h2>
 
     <div class="gallery-grid">
 
-      <img src="images//Pitched_roof/pitched-roof.png">
-      <img src="images//Pitched_roof/pitchroof1.jpg">
-      <img src="images//Pitched_roof/pitchroof2.jpeg">
-      <img src="images//Pitched_roof/pitchroof4.jpeg">
-      <img src="images//Pitched_roof/pitchroof5.png">
-      <img src="images//Pitched_roof/pitchroof6.png">
-      <img src="images//Pitched_roof/pitchroof7.jpg">
-      <img src="images//Pitched_roof/pitchroof8.png">
+      <img src="images//Pitched_roof/pitched-roof.png" onclick="openLightbox(0)">
+      <img src="images//Pitched_roof/pitchroof1.jpg" onclick="openLightbox(1)">
+      <img src="images//Pitched_roof/pitchroof2.jpeg" onclick="openLightbox(2)">
+      <img src="images//Pitched_roof/pitchroof4.jpeg" onclick="openLightbox(4)">
+      <img src="images//Pitched_roof/pitchroof5.png" onclick="openLightbox(5)">
+      <img src="images//Pitched_roof/pitchroof6.png" onclick="openLightbox(6)">
+      <img src="images//Pitched_roof/pitchroof7.jpg" onclick="openLightbox(7)">
+      <img src="images//Pitched_roof/pitchroof8.png"onclick="openLightbox(8)">
 
 
     </div>
   </div>
 </section>
-
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img">
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+    <button class="next" onclick="changeImage(1)">❯</button>
+  </div>
 <footer id="site-footer"></footer>
 
 <script src="script.js"></script>

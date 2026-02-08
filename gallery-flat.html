@@ -13,24 +13,35 @@
 
 <section class="gallery-section">
   <div class="container">
+    <div class="back-nav">
+        <a href="index.html" class="btn-outline-dark">← Back to Home</a>
+      </div>
+      
+      
     <h2 class="section-title">Flat Roof Houses</h2>
 
     <div class="gallery-grid">
 
-      <img src="images//Flat_roof/flat-roof.jpeg">
-      <img src="images//Flat_roof/flatroof1.jpg">
-      <img src="images//Flat_roof/flatroof2.jpg">
-      <img src="images//Flat_roof/flatroof3.jpeg">
-      <img src="images//Flat_roof/flatroof4.jpeg">
-      <img src="images//Flat_roof/flatroof5.jpeg">
-      <img src="images//Flat_roof/flatroof6.jpeg">
-      <img src="images//Flat_roof/flatroof7.jpeg">
-      <img src="images//Flat_roof/flatroof8.jpeg">
+      <img src="images//Flat_roof/flat-roof.jpeg" onclick="openLightbox(0)">
+      <img src="images//Flat_roof/flatroof1.jpg" onclick="openLightbox(1)">
+      <img src="images//Flat_roof/flatroof2.jpg" onclick="openLightbox(2)">
+      <img src="images//Flat_roof/flatroof3.jpeg" onclick="openLightbox(3)">
+      <img src="images//Flat_roof/flatroof4.jpeg" onclick="openLightbox(4)">
+      <img src="images//Flat_roof/flatroof5.jpeg" onclick="openLightbox(5)">
+      <img src="images//Flat_roof/flatroof6.jpeg" onclick="openLightbox(6)">
+      <img src="images//Flat_roof/flatroof7.jpeg" onclick="openLightbox(7)">
+      <img src="images//Flat_roof/flatroof8.jpeg" onclick="openLightbox(8)">
 
     </div>
   </div>
 </section>
-
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img">
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+    <button class="next" onclick="changeImage(1)">❯</button>
+  </div>
+  
 <footer id="site-footer"></footer>
 
 <script src="script.js"></script>

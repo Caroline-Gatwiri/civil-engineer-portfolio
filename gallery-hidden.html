@@ -13,24 +13,34 @@
 
 <section class="gallery-section">
   <div class="container">
+    <div class="back-nav">
+        <a href="index.html" class="btn-outline-dark">← Back to Home</a>
+      </div>
+      
+      
     <h2 class="section-title">Hidden Roof Houses</h2>
 
     <div class="gallery-grid">
 
-      <img src="images//Hidden_roof/hidden-roof.png">
-      <img src="images//Hidden_roof/hidden1.png">
-      <img src="images//Hidden_roof/hidden2.png">
-      <img src="images//Hidden_roof/hidden3.png">
-      <img src="images//Hidden_roof/hidden4.png">
-      <img src="images//Hidden_roof/hidden5.png">
-      <img src="images//Hidden_roof/hidden6.jpeg">
-      <img src="images//Hidden_roof/hidden7.jpeg">
-      <img src="images//Hidden_roof/hidden8.jpeg">
+      <img src="images//Hidden_roof/hidden-roof.png" onclick="openLightbox(0)">
+      <img src="images//Hidden_roof/hidden1.png" onclick="openLightbox(1)">
+      <img src="images//Hidden_roof/hidden2.png" onclick="openLightbox(2)">
+      <img src="images//Hidden_roof/hidden3.png" onclick="openLightbox(3)">
+      <img src="images//Hidden_roof/hidden4.png" onclick="openLightbox(4)">
+      <img src="images//Hidden_roof/hidden5.png" onclick="openLightbox(5)">
+      <img src="images//Hidden_roof/hidden6.jpeg" onclick="openLightbox(6)">
+      <img src="images//Hidden_roof/hidden7.jpeg" onclick="openLightbox(7)">
+      <img src="images//Hidden_roof/hidden8.jpeg" onclick="openLightbox(8)">
 
     </div>
   </div>
 </section>
-
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img">
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+    <button class="next" onclick="changeImage(1)">❯</button>
+  </div>
 <footer id="site-footer"></footer>
 
 <script src="script.js"></script>

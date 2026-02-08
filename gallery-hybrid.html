@@ -13,19 +13,29 @@
 
 <section class="gallery-section">
   <div class="container">
+    <div class="back-nav">
+        <a href="index.html" class="btn-outline-dark">← Back to Home</a>
+      </div>
+      
+      
     <h2 class="section-title">Hybrid Houses</h2>
 
     <div class="gallery-grid">
 
-      <img src="images//Hybrid_roof/hybrid-roof.jpeg">
-      <img src="images//Hybrid_roof/hybridroof1.png">
-      <img src="images//Hybrid_roof/hybridroof2.png">
-      <img src="images//Hybrid_roof/hybridroof3.png">
-      <img src="images//Hybrid_roof/WhatsApp Image 2026-02-08 at 4.36.10 PM.jpeg">
+      <img src="images//Hybrid_roof/hybrid-roof.jpeg" onclick="openLightbox(0)">
+      <img src="images//Hybrid_roof/hybridroof1.png" onclick="openLightbox(1)">
+      <img src="images//Hybrid_roof/hybridroof2.png" onclick="openLightbox(2)">
+      <img src="images//Hybrid_roof/hybridroof3.png" onclick="openLightbox(3)">
+      <img src="images//Hybrid_roof/WhatsApp Image 2026-02-08 at 4.36.10 PM.jpeg" onclick="openLightbox(5)">
     </div>
   </div>
 </section>
-
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img">
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+    <button class="next" onclick="changeImage(1)">❯</button>
+  </div>
 <footer id="site-footer"></footer>
 
 <script src="script.js"></script>
