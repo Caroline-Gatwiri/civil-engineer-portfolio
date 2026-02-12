@@ -218,6 +218,23 @@ main{
     nav ul.show {
       display: flex;
     }
+    .about-company-content{
+      flex-direction:column;
+      text-align:center;
+    }
+  
+    .about-company-text{
+      order:2;
+    }
+  
+    .about-company-image{
+      order:1;
+    }
+  
+    .experience-grid{
+      flex-direction:column;
+      gap:25px;
+    }
     
   }
 
