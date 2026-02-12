@@ -1,3 +1,40 @@
+
+const galleryDatabase = {
+
+  Flat_roof: [
+    "flat-roof.jpeg",
+    "flatroof1.jpg",
+    "flatroof2.jpg",
+    "flatroof3.jpeg",
+    "flatroof4.jpeg",
+    "flatroof5.jpeg",
+    "flatroof6.jpeg",
+    "flatroof7.jpeg",
+    "flatroof8.jpeg",
+    "flatroom9.jpg",
+    "flatroom10.jpeg",
+    "flatroom11.jpeg",
+    "flatroom12.jpeg",
+    "flatroom13.png",
+    "flatroom14.png",
+    "flatroom15.png",
+    "flatroom16.png",
+    "flatroom17.jpg",
+    "flatroom18.jpeg",
+    "flatroom19.jpeg",
+    "flatroom20.jpeg",
+    "flatroom21.jpeg",
+    "flatroom22.jpeg"
+  ],
+
+  /* later you add */
+  Apartments: [],
+  Hybrid_roof: [],
+  Hidden_roof: ["hidden-roof.png"]
+
+};
+
+
 const navbarHTML = `
   <div class="container">
     <h1 class="logo">ATCON CONSTRUCTION LTD</h1>
@@ -79,7 +116,7 @@ let currentIndex = 0;
 let images = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-  images = Array.from(document.querySelectorAll(".gallery-grid img")).map(img => img.src);
+  
 });
 
 function openLightbox(index){
@@ -98,3 +135,36 @@ function changeImage(step){
   if(currentIndex >= images.length) currentIndex = 0;
   document.getElementById("lightbox-img").src = images[currentIndex];
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const gallery = document.getElementById("gallery");
+
+  if (gallery) {
+
+    const category = gallery.dataset.category;
+    const files = galleryDatabase[category];
+
+    const folder = "images/" + category + "/";
+
+    images = [];
+
+    files.forEach((file, index) => {
+
+      const img = document.createElement("img");
+      img.src = folder + file;
+      img.alt = "Project Image";
+
+      img.addEventListener("click", () => openLightbox(index));
+
+      gallery.appendChild(img);
+
+      images.push(img.src);
+
+    });
+
+  }
+
+});
+
+

@@ -981,3 +981,54 @@ main{
   justify-content:space-around;
   text-align:center;
 }
+
+.section-subtitle{
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 40px;
+  color:#666;
+}
+
+/* filters */
+.project-filters{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.filter-btn{
+  border:none;
+  background:#eef3f8;
+  padding:10px 20px;
+  margin:6px;
+  border-radius:25px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+  background:var(--secondary);
+  color:white;
+}
+
+/* project overlay effect */
+.project-card{
+  position:relative;
+  overflow:hidden;
+}
+
+.project-overlay{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:linear-gradient(transparent, rgba(0,0,0,0.8));
+  color:white;
+  padding:25px;
+  opacity:0;
+  transition:.3s;
+}
+
+.project-card:hover .project-overlay{
+  opacity:1;
+}
