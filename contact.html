@@ -37,15 +37,23 @@
         </div>
 
         <!-- Contact Form -->
-        <div class="contact-form">
-          <h3>Send Me a Message</h3>
-          <form id="contactForm">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-          </form>
-        </div>
+        <form id="contactForm" action="mailto:atconltdinfo@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+        
+          <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+        
+          <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+        
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        
+        
 
       </div>
     </div>
@@ -57,7 +65,7 @@
       <h3>Service Area</h3>
       <!-- Replace with real embed link later -->
       <iframe
-        src="https://maps.app.goo.gl/QUVXzJFJ91xKDqx98?g_st=aw"
+        src="https://www.google.com/maps?q=Simba+Centre+Nairobi&output=embed"
         width="100%"
         height="300"
         style="border:0; border-radius: 10px;"
@@ -68,8 +76,12 @@
     </div>
   </section>
 
+  <a href="https://wa.me/254798806154"
+   class="whatsapp-float"
+   target="_blank">
+   <i class="fab fa-whatsapp"></i>
+</a>
   <!-- Footer -->
-  <footer>
     <footer id="site-footer"></footer>
 
   <script src="script.js"></script>
