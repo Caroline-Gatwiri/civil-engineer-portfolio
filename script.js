@@ -58,7 +58,7 @@ const navbarHTML = `
 
 const footerHTML = `
   <div class="container">
-    <p>&copy; 2026 ATCON Construction LTD | Civil Engineer</p>
+    <p>&copy; 2026 ATCON Construction LTD | Archteral Firm & Civil Engineering</p>
 
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/dennis-munene-567150271" target="_blank">
